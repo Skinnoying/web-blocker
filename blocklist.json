@@ -1,0 +1,20 @@
+{
+  "domains": [
+    "pornhub.com",
+    "xvideos.com",
+    "redtube.com",
+    "sex.com",
+    "hentaihaven.xxx",
+    "rule34.xxx",
+    "bet365.com",
+    "1xbet.com",
+    "casino.com",
+    "slotomania.com",
+    "jackpotcitycasino.com",
+    "gambling.com"
+  ],
+  "regex_patterns": [
+    "(porn|p0rn|xxx|adult|hentai|nsfw|lewd)",
+    "(casino|bet|jackpot|slot|gambl|wager|1x-bet|judol|judi )"
+  ]
+}
