@@ -1,7 +1,7 @@
 let blocklist = { domains: [], regex_patterns: [] };
 let blockCount = 0;
 
-// 🔧 Fungsi untuk memuat blocklist
+// Fungsi untuk memuat blocklist
 function loadBlocklist() {
   fetch("https://raw.githubusercontent.com/YourUsername/blocklist/main/blocklist.json")
     .then(res => res.json())
@@ -22,7 +22,7 @@ function loadBlocklist() {
     });
 }
 
-// 🕐 Jalankan saat ekstensi di-load
+// Jalankan saat ekstensi di-load
 loadBlocklist();
 // Update tiap 12 jam
 setInterval(loadBlocklist, 12 * 60 * 60 * 1000);
@@ -60,7 +60,7 @@ chrome.webRequest.onBeforeRequest.addListener(
   ["blocking"]
 );
 
-// 🚫 Notifikasi & hitung statistik
+// Notifikasi & hitung statistik
 function blockDetected(url) {
   blockCount++;
   chrome.storage.local.set({ blockCount });
